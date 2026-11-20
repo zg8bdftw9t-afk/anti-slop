@@ -1,0 +1,24 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+html,body{margin:0;background:#000;overflow:hidden}
+#wrap{position:relative;width:1280px;height:720px;background:#000;overflow:hidden}
+#view{position:absolute;left:0;top:92px;width:1280px;height:536px}
+#view canvas{display:block}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(0,0,0,0) 55%,rgba(8,6,30,.55) 100%);pointer-events:none}
+#warm{position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,170,90,0) 40%,rgba(255,150,80,.10) 100%);pointer-events:none}
+#sub{position:absolute;left:30px;right:30px;top:636px;height:76px;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;font:700 29px/1.25 "DejaVu Sans",sans-serif;opacity:0}
+#sub b{margin-right:10px}
+#sub i{color:#e8e0ff;font-style:italic;font-weight:600}
+#sub .on{color:#ffe066;text-shadow:0 0 14px #ffb300}
+#title{position:absolute;left:0;right:0;top:180px;text-align:center;font:800 88px "DejaVu Serif",serif;color:#ffe9a0;text-shadow:0 5px 0 #a8560c,0 0 40px #ffb300;opacity:0;letter-spacing:2px}
+#title small{display:block;font:italic 600 34px "DejaVu Serif",serif;color:#fff;text-shadow:0 2px 10px #000;margin-top:10px;letter-spacing:4px}
+#tamat{position:absolute;left:0;right:0;top:260px;text-align:center;font:800 120px "DejaVu Serif",serif;color:#ffe9a0;text-shadow:0 5px 0 #a8560c,0 0 40px #ffb300;opacity:0}
+#flash{position:absolute;inset:0;background:#fff;opacity:0}
+#black{position:absolute;inset:0;background:#000;opacity:0}
+</style>
+<script type="importmap">{"imports":{"three":"/node_modules/three/build/three.module.js","three/addons/":"/node_modules/three/examples/jsm/"}}</script>
+</head><body>
+<div id="wrap"><div id="view"><div id="vig"></div><div id="warm"></div><div id="title">Bobo dan Bintang Kecil<small>Sebuah Dongeng Animasi</small></div><div id="tamat">Tamat</div><div id="flash"></div></div><div id="sub"></div><div id="black"></div></div>
+<script type="module" src="main2.js"></script>
+</body></html>
